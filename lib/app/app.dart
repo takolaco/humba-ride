@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../features/splash/presentation/splash_screen.dart';
 import 'theme/app_theme.dart';
 
 class HumbaRideApp extends StatelessWidget {
@@ -10,11 +12,7 @@ class HumbaRideApp extends StatelessWidget {
       title: 'Humba Ride',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Humba Ride'),
-        ),
-      ),
+      home: const SplashScreen(),
     );
   }
 }
